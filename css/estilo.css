@@ -409,23 +409,22 @@
     }
 /*CONTACTO SECCION*/
 
-    .contactoGrid /*le da formato a la sección contacto. Diferencia la altura del main*/
-    {
-        width: auto;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 200PX 300PX 400PX;
-        grid-template-areas: "header header"
-                                "main main"
-                                "footer footer "
-                                ;
-        row-gap: 100px;
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
+#containernav {
+    justify-content: right;
+}
 
+#navul {
+    justify-content: right;
+}
+
+#navbarScrol {
+    justify-content:right;   
+}
+
+#contactoMain { 
+height: 2000px;
+
+}
  /*SERVICIOS SECCION*/
 
     .serviciosGrid /*le da formato a la sección servicios. Diferencia la altura del main*/
