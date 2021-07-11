@@ -5,126 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ospan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="planesGrid">
-    <header>  <!-- COTENIDO INICIAL-->
-        <div>
-            <a href="../index.html"><img src="../img/ospan.png" alt="ospan"></a>
+    <header>
+        <div id="navTit" class="container-fluid">
+          <div class="row justify-content-center py-2">
+              <div  class="col-4"></div>
+              <div class="col-md-4 text-center">
+                          <a href="../index.html"><img src="../img/ospan.png" alt="ospan"></a>
+              </div>
+              <div class="col-4"></div>
+          </div>
         </div>
-        <nav>
-            <ul>
-                <il><a href="../pages/Servicios.html">Servicios</a></il>
-                <li><a href="../pages/Planes.html">Planes</a></li>
-                <il><a href="../pages/Contacto.html">Contacto</a></il>
-                <il><a href="../pages/Usuarios.html">Usuarios</a></il>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link  active" href="#">Planes</a>
+                <a class="nav-link" href="Servicios.html">Servicios</a>
+                <a class="nav-link" href="Usuarios.html">Usuarios</a>
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
         </nav>
-    </header>
-    <main class="planesMain">
-            <div class="planesTitulo">
+        </header>
+    <main class="container-fluid mt-3">
+            <div class="col text-center my-3">
                 <h3>Planes & Precios</h3>
                 <p class="planesSubtitulo">Precios flexibles a la medida de cada necesidad</p>
-                    <div class="gridPlanes">
-                        <div class="gpet">
+                    <div class="row text-center  justify-content-center">
+                        <div class="col-2">
                             <i class="material-icons" id="pets">pets</i>
                             <h4>Asistencia a cualquier animal</h>
                         </div>
-                        <div class="gauto">
+                        <div class="col-2">
                             <i class="material-icons" id="taxi">local_taxi</i>
                             <h4>Traslado 24hs</h>
                          </div>
-                        <div class="gpago">
+                        <div class="col-2">
                             <i class="material-icons" id="payment">payments</i>
                             <h4>Todos los medios de pago</h>
                          </div>
                     </div>
             </div>
-        <article class="plan1">
-            <div class="precio">
-                <h2>ON DEMAND</h2>
+        <div class="container-fluid">
+            <div class="row text-center justify-content-center ">
+                <div class="col-md-3 col-sm-12">
+                    <div id="nombre" class="row bg-light py-2">
+                        <h2>ON DEMAND</h2>
+                    </div>
+                    <div id="planDescripcion" class="row">
+                    <h4>Se podrá solicitar el servicio por una única vez.</h4>
+                    <h2>$250 per ride</h2>
+                    <div class="col-12">
+                        <div id="botonInfo" class="btn btn-info">+INFO</div>
+                   </div>                    </div>
+                    <div class="descripcion">
+                        <h4>Beneficio 1</h4>
+                        <h4>Beneficio 2</h4>
+                        <h4>Beneficio 3</h4>
+                        <h4>Beneficio 4</h4>
+                        <h4>Beneficio 5</h4>
+                        <h4>Beneficio 6</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div id="nombre" class="row py-2">
+                        <h2>STANDAR</h2>
+                    </div>
+                    <div id="planDescripcion" class="row">
+                        <h4>Incluye 4 traslados mensuales</h4>
+                        <h2>$2000 / mes</h2>
+                       <div class="col-12">
+                             <div id="botonInfo" class="btn btn-info">+INFO</div>
+                        </div>
+                    </div>
+                    <div class="descripcion">
+                        <h4>Beneficio 1</h4>
+                        <h4>Beneficio 2</h4>
+                        <h4>Beneficio 3</h4>
+                        <h4>Beneficio 4</h4>
+                        <h4>Beneficio 5</h4>
+                        <h4>Beneficio 6</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                <div id="nombre" class="row bg-light py-2">
+                    <h2>PRO</h2>
+                </div>
+                <div id="planDescripcion" class="row">
+                    <h4>Incluye hasta 20 traslados mensuales</h4>
+                    <h2>$10000 / mes</h2>
+                    <div class="col-12">
+                        <div id="botonInfo" class="btn btn-info">+INFO</div>
+                   </div>
+                </div>
+                <div class="descripcion">
+                    <h4>Beneficio 1</h4>
+                    <h4>Beneficio 2</h4>
+                    <h4>Beneficio 3</h4>
+                    <h4>Beneficio 4</h4>
+                    <h4>Beneficio 5</h4>
+                    <h4>Beneficio 6</h4>
+                </div>
             </div>
-            <div class="activa">
-                <h4>Se podrá solicitar el servicio por una única vez.</h4>
-                <h2>$250 per ride</h2>
-                <button>+INFO</button>
-            </div>
-            <div class="descripcion">
-                <h4>Beneficio 1</h4>
-                <h4>Beneficio 2</h4>
-                <h4>Beneficio 3</h4>
-                <h4>Beneficio 4</h4>
-                <h4>Beneficio 5</h4>
-                <h4>Beneficio 6</h4>
-            </div>
-        </article>
-        <article class="plan2">
-            <div class="precio">
-                <h2>STANDAR</h2>
-            </div>
-            <div class="activa">
-                <h4>Incluye 4 traslados mensuales</h4>
-                <h2>$2000 / mes</h2>
-                <button>+INFO</button>
-            </div>
-            <div class="descripcion">
-                <h4>Beneficio 1</h4>
-                <h4>Beneficio 2</h4>
-                <h4>Beneficio 3</h4>
-                <h4>Beneficio 4</h4>
-                <h4>Beneficio 5</h4>
-                <h4>Beneficio 6</h4>
-            </div>
-        </article>
-        <article class="plan3">
-            <div class="precio">
-                <h2>PRO</h2>
-            </div>
-            <div class="activa">
-                <h4>Incluye hasta 20 traslados mensuales</h4>
-                <h2>$10000 / mes</h2>
-                <button>+INFO</button>
-            </div>
-            <div class="descripcion">
-                <h4>Beneficio 1</h4>
-                <h4>Beneficio 2</h4>
-                <h4>Beneficio 3</h4>
-                <h4>Beneficio 4</h4>
-                <h4>Beneficio 5</h4>
-                <h4>Beneficio 6</h4>
-            </div>
-        </article>
+          </div>
+         </div>
     </main>
     <footer>  <!-- pie de pagina--> 
-        <div class="footerDivDireccion">
-            <h1>Dirección</h1>
-            <p>Calle</p>
-            <p>Numero</p>
-            <p>Localidad</p>
-            <p>CP</p>
+        <div id="prueba" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-6">
+                    <h1>Dirección</h1>
+                    <p>Calle</p>
+                    <p>Numero</p>
+                    <p>Localidad</p>
+                    <p>CP</p>
+                </div>
+                <div class="col-6">
+                    <h1>Contacto</h1>
+                    <p>aaaaaa</p>
+                    <p>info@amb</p>
+                    <p>Linkedin</p>
+                    <p>Facebook</p>
+                </div>
+            </div>   
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../img/ospan.png" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../img/logo-Panda.png" alt="">
+                    </div>
+                </div>
+                <div class="row text-start">
+                    <div class="col-12">
+                        <h2>Politicas de Privacidad</h2>
+                        <a href="#" class="btn-flotante">Quiero conocer mas</a>
+                    </div>
+                </div>
         </div>
-        <div class="footerDivContacto">
-            <h1>Contacto</h1>
-            <p>aaaaaa</p>
-            <p>info@amb</p>
-            <p>Linkedin</p>
-            <p>Facebook</p>
-        </div>
-        <div class="footerDivLog1">
-            <img src="../img/ospan.png" alt="">
-        </div>
-        <div class="footerDivLog2">
-            <img src="../img/logo-Panda.png" alt="">
-        </div>
-        <div class="footerDivPolit">
-            <h2>Politicas de Privacidad</h2>
-        </div>
-
     </footer>
-
-    <a href="#" class="btn-flotante">Quiero conocer mas</a>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

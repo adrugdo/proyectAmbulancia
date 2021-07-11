@@ -1,0 +1,122 @@
+@import 'colores.sass'; 
+
+
+
+@mixin historiaUsuario($fontsizeUsuario,$colorUsuario,$bgcolorUsuario){
+    font-size: $fontsizeUsuario;
+    color: $colorUsuario;
+    background-color: $bgcolorUsuario;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*HEADER*/
+header {
+background-color: $indigo;
+}
+
+/*FOOTER*/
+footer {
+        background-color: $indigo;
+        color: white;
+        img {
+            width: 250px ;
+            height: 80px;
+        }
+}
+/*PLANES*/
+
+#planDescripcion {
+    height: 230px;
+}
+
+#botonInfo {
+    height: 50px;
+    width: 100px;
+}
+
+main {
+    div {
+        h4 {
+            font-size: 16px;
+        }
+
+        h2 {
+            height:50px;
+        }
+    }
+}
+
+#mara {
+   
+
+    p { @include historiaUsuario(18px,black,$verdin);   
+    }
+}
+
+#serafina {
+    
+  p{  @include historiaUsuario(18px,black,$verdin);
+  }
+} 
+
+#usuariosMain {
+
+
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+/*BOTON FLOTANTE*/
+
+.btn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: #adb5bd; /* Color de fondo */
+    padding: 18px 30px; /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+    .btn-flotante:hover {
+    background-color: #A40DDB; /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+
+/*AGREGADO DE MEDIA PARA EL BOTON FLOTANTE*/
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+} 
+
+
+/*FORMATEO EXTRA*/
+a {                             /*saca decoration de los links*/
+    text-decoration: none;
+    color: white;
+}
+a:visited {                     /*saca color de los hipervinculos visitados*/
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+

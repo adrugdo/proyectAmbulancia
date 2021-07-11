@@ -5,70 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ospan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
     
 </head>
 <body id="usuariosGrid">
-    <header>  <!-- COTENIDO INICIAL-->
-        <div>
-            <a href="../index.html"><img src="../img/ospan.png" alt="ospan"></a>
+    <header>
+        <div id="navTit" class="container-fluid">
+          <div class="row justify-content-center py-2">
+              <div  class="col-4"></div>
+              <div class="col-md-4 text-center">
+                          <a href="../index.html"><img src="../img/ospan.png" alt="ospan"></a>
+              </div>
+              <div class="col-4"></div>
+          </div>
         </div>
-        <nav>
-            <ul>
-                <il><a href="../pages/Servicios.html">Servicios</a></il>
-                <li><a href="../pages/Planes.html">Planes</a></li>
-                <il><a href="../pages/Contacto.html">Contacto</a></il>
-                <il><a href="../pages/Usuarios.html">Usuarios</a></il>
-            </ul>
-        </nav>
-    </header>
-    <main id="usuariosMain">
-        <div class="mainDiv1">
-            <h1>Mara</h1>
-            <p>No pasa un 29 sin comer ñoquis y cada vez que se encuentra un animal en la calle, lo tiene que transitar.. Está claro que ama los animales pero su debilidad son los gatitos. Disfruta estar de entrecasa casi tanto como vivir sola. seguimiento y darle mucho amor al animalito transitado en ese momento. Además, trabaja freelance como Investigadora Social en una agencia de Publicidad.
-            </p>
-        </div>
-        <div class="mainDiv2">
-             <img src="../img/joven.jpeg" alt="joven" id="joven">
-        </div>
-        <div class="mainDiv3">
-             <img src="../img/señora.jpeg" alt="señora" id="señora">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link " href="Planes.html">Planes</a>
+                <a class="nav-link" href="Servicios.html">Servicios</a>
+                <a class="nav-link active" href="#">Usuarios</a>
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </div>
             </div>
-        <div class="mainDiv4">
-            <h1>Serafina</h1>
-             <p>Como buena abuela, todos los fines de semana espera la visita de sus hijos y nietos con un budín o torta diferente. Tiene un jardín enorme el cual está lleno de plantas. Va con su esposo Nicolás y su perro KIMO todos los sábados por la mañana a pasear por diferentes viveros y se trae siempre una especie diferente para plantar.
-            </p>
-        </div>
+          </div>
+        </nav>
+        </header>
+    <main id="usuariosMain">
+        <div class="container-fluid ">
+                <div id="mara" class="row  justify-content-center">
+                    <div class="col-12 text-center"><h1>Mara</h1></div>
+                    <div class="col-sm-12 col-md-4"><p>No pasa un 29 sin comer ñoquis y cada vez que se encuentra un animal en la calle, lo tiene que transitar.. Está claro que ama los animales pero su debilidad son los gatitos. Disfruta estar de entrecasa casi tanto como vivir sola. seguimiento y darle mucho amor al animalito transitado en ese momento. Además, trabaja freelance como Investigadora Social en una agencia de Publicidad.</p></div>
+                </div>
+                <div class="row text-center justify-content-center">
+                    <img src="../img/joven.jpeg" alt="joven" id="joven">
+                </div>
+                <div id="serafina" class="row justify-content-center">
+                    <div class="col-12 text-center"><h1>Serafina</h1></div>
+                    <div class="col-sm-12 col-md-4"><p>Como buena abuela, todos los fines de semana espera la visita de sus hijos y nietos con un budín o torta diferente. Tiene un jardín enorme el cual está lleno de plantas. Va con su esposo Nicolás y su perro KIMO todos los sábados por la mañana a pasear por diferentes viveros y se trae siempre una especie diferente para plantar.</p></div>
+                </div>
+                <div class="row justify-content-center mb-4">
+                    <img src="../img/señora.jpeg" alt="señora" id="señora">
+                </div>
+         </div>
     </main>
     <footer>  <!-- pie de pagina--> 
-        <div class="footerDivDireccion">
-            <h1>Dirección</h1>
-            <p>Calle</p>
-            <p>Numero</p>
-            <p>Localidad</p>
-            <p>CP</p>
+        <div id="prueba" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-6">
+                    <h1>Dirección</h1>
+                    <p>Calle</p>
+                    <p>Numero</p>
+                    <p>Localidad</p>
+                    <p>CP</p>
+                </div>
+                <div class="col-6">
+                    <h1>Contacto</h1>
+                    <p>aaaaaa</p>
+                    <p>info@amb</p>
+                    <p>Linkedin</p>
+                    <p>Facebook</p>
+                </div>
+            </div>   
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../img/ospan.png" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../img/logo-Panda.png" alt="">
+                    </div>
+                </div>
+                <div class="row text-start">
+                    <div class="col-12">
+                        <h2>Politicas de Privacidad</h2>
+                        <a href="#" class="btn-flotante">Quiero conocer mas</a>
+                    </div>
+                </div>
         </div>
-        <div class="footerDivContacto">
-            <h1>Contacto</h1>
-            <p>aaaaaa</p>
-            <p>info@amb</p>
-            <p>Linkedin</p>
-            <p>Facebook</p>
-        </div>
-        <div class="footerDivLog1">
-            <img src="../img/ospan.png" alt="">
-        </div>
-        <div class="footerDivLog2">
-            <img src="../img/logo-Panda.png" alt="">
-        </div>
-        <div class="footerDivPolit">
-            <h2>Politicas de Privacidad</h2>
-        </div>
-
     </footer>
-
-    <a href="#" class="btn-flotante">Quiero conocer mas</a>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
