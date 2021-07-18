@@ -1,7 +1,5 @@
 @import 'colores.sass'; 
 
-
-
 @mixin historiaUsuario($fontsizeUsuario,$colorUsuario,$bgcolorUsuario){
     font-size: $fontsizeUsuario;
     color: $colorUsuario;
@@ -114,9 +112,11 @@ a {                             /*saca decoration de los links*/
 a:visited {                     /*saca color de los hipervinculos visitados*/
     text-decoration: none;
     color: white;
-
 }
 
-
+.card-img-bottom {
+    width: 400px;
+    height: 400px;
+}
 
 

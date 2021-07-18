@@ -90,3 +90,7 @@ a:visited {
   /*saca color de los hipervinculos visitados*/
   text-decoration: none;
   color: white; }
+
+.card-img-bottom {
+  width: 400px;
+  height: 400px; }
